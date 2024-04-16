@@ -21,21 +21,21 @@ const Hero = () => {
       ) : (
         movie && (
           <>
-            <div className="flex flex-col gap-6 items-center justify-center">
-              <h1 className="text-3xl font-bold">{movie.title}</h1>
-              <p className="text-start">{movie.overview}</p>
+            <div className=" text-black flex flex-col gap-6 items-center justify-center">
+              <h1 className="text-3xl font-bold ">{movie.title}</h1>
+              <p className="text-start text-xl">{movie.overview}</p>
               <p>
                 <span>IMDB:</span>
-                <span className="text-yellow-400 ms-2 font-semibold">
+                <span className=" text-black  ms-2 font-semibold">
                   {movie.vote_average.toFixed(1)}
                 </span>
               </p>
 
-              <div className=" flex gap-5 ">
-                <button className="p-2 bg-red-600 rounded hover:bg-red-700">
+              <div className=" grid gap-4 ">
+                <button className="p-2 bg-red-600 rounded text-white hover:bg-red-700">
                   Film İzle{" "}
                 </button>
-                <button className=" p-2 bg-blue-600 rounded hover:bg-blue-700">
+                <button className=" p-2 bg-red-600 rounded  text-white hover:bg-red-700">
                   Listeye Ekle
                 </button>
               </div>

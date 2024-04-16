@@ -6,6 +6,7 @@ import { getGenres } from "../redux/actions/genreActions";
 import store from "../redux/store";
 import Loader from "../components/Loader";
 import MovieList from "../components/MovieList";
+import Error from "../components/Error";
 
 const MainPage = () => {
   const { isLoading, error, genres } = useSelector((store) => store.genres);

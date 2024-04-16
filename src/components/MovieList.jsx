@@ -21,12 +21,13 @@ const MovieList = ({ genre, actor }) => {
 
   return (
     <div className="my-10">
-      <h1 className="text-3xl font-semibold mb-3">{genre.name}</h1>
+      <h1 className="text-3xl font-semibold mb-3  text-black ">{genre.name}</h1>
       <Splide
         options={{
           autoWidth: true,
           gap: "10px",
           lazyLoad: true,
+          pagination: false,
         }}
       >
         {movies.map((movie) => (

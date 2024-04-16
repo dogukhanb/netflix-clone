@@ -33,18 +33,18 @@ const DetailPage = () => {
       ) : (
         <div>
           {/* Üst alan */}
-          <div className="relative h-[20vh]">
+          <div className="relative  ">
             <img
-              className="object-cover h-full w-full"
+              className="object-center h-[45vh] w-[184vh] "
               src={baseImgUrl + movie.backdrop_path}
               alt=""
             />
-            <div className="absolute bg-black inset-0 grid place-items-center bg-opacity-60">
+            <div className="absolute bg-black inset-0 grid place-items-center bg-opacity-20">
               <h2 className="text-3xl font-semibold">{movie.title}</h2>
             </div>
           </div>
           {/* Orta Alan */}
-          <div className="my-10 grid grid-cols-1 md:grid-cols-2">
+          <div className="my-10 grid grid-cols-1 md:grid-cols-2 text-black">
             <div>
               {movie.genres && (
                 <DetailDisplay title={"Kategoriler"} data={movie.genres} />
